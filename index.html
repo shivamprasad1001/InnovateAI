@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InnovateAI Solutions</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // Enable class-based dark mode
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0D9488', // Teal-600
+              light: '#2DD4BF',   // Teal-400
+              dark: '#0F766E',    // Teal-700
+            },
+            secondary: {
+              DEFAULT: '#F97316', // Orange-500
+              light: '#FB923C',   // Orange-400
+              dark: '#EA580C',    // Orange-600
+            },
+            neutral: {
+              light: '#F3F4F6', // Gray-100
+              DEFAULT: '#6B7280', // Gray-500
+              dark: '#1F2937',  // Gray-800
+              darker: '#111827', // Gray-900 for dark backgrounds
+            },
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            fadeOutBeforeRemove: { /* For modal backdrop on close */
+              '0%': { opacity: '1' },
+              '99%': { opacity: '0' },
+              '100%': { opacity: '0', display: 'none' },
+            },
+            scaleIn: {
+              '0%': { opacity: '0', transform: 'scale(0.95)' },
+              '100%': { opacity: '1', transform: 'scale(1)' },
+            },
+             scaleOut: {
+              '0%': { opacity: '1', transform: 'scale(1)' },
+              '100%': { opacity: '0', transform: 'scale(0.95)' },
+            }
+          },
+          animation: {
+            fadeInUp: 'fadeInUp 0.5s ease-out forwards',
+            fadeIn: 'fadeIn 0.3s ease-out forwards',
+            fadeOutBeforeRemove: 'fadeOutBeforeRemove 0.3s ease-in forwards',
+            scaleIn: 'scaleIn 0.2s ease-out forwards',
+            scaleOut: 'scaleOut 0.2s ease-in forwards',
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "@google/genai": "https://esm.sh/@google/genai@^0.15.0"
+  }
+}
+</script>
+  <style>
+    /* For elements that will be animated on scroll */
+    .animate-on-scroll {
+      opacity: 0;
+    }
+    .animated {
+      animation-fill-mode: forwards; /* Keep final state of animation */
+    }
+    /* Custom scrollbar styles */
+    .scrollbar-thin {
+      scrollbar-width: thin;
+      scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+    }
+    .scrollbar-thin::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-track {
+      background: var(--scrollbar-track);
+      border-radius: 4px;
+    }
+    .scrollbar-thin::-webkit-scrollbar-thumb {
+      background-color: var(--scrollbar-thumb);
+      border-radius: 4px;
+      border: 2px solid var(--scrollbar-track); /* Creates padding around thumb */
+    }
+    /* Define scrollbar colors using CSS variables to support Tailwind's dark mode */
+    :root {
+      --scrollbar-track: #F3F4F6; /* neutral-light */
+      --scrollbar-thumb: #D1D5DB; /* gray-300 */
+    }
+    .dark {
+      --scrollbar-track: #1F2937; /* neutral-dark */
+      --scrollbar-thumb: #4B5563; /* gray-600 */
+    }
+  </style>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="font-sans antialiased text-neutral-dark bg-white dark:bg-neutral-darker dark:text-neutral-light transition-colors duration-300 ease-in-out">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

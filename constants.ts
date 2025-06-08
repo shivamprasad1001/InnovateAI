@@ -162,10 +162,9 @@ export const CONTACT_FORM_HEADING = "Get in Touch";
 export const CONTACT_BOOKING_PROMPT = "Ready to talk? Schedule your free 15-minute consultation here.";
 
 export const TRUSTED_BY_LOGOS_PLACEHOLDER: string[] = [
-  "https://via.placeholder.com/120x60.png?text=ClientLogo1",
-  "https://via.placeholder.com/120x60.png?text=ClientLogo2",
-  "https://via.placeholder.com/120x60.png?text=ClientLogo3",
-  "https://via.placeholder.com/120x60.png?text=ClientLogo4",
-  "https://via.placeholder.com/120x60.png?text=ClientLogo5",
+  "https://images.pexels.com/photos/10142683/pexels-photo-10142683.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1?text=ClientLogo2",
+  "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?text=ClientLogo3",
+  "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?text=ClientLogo4",
+  "https://images.pexels.com/photos/920377/pexels-photo-920377.jpeg?text=ClientLogo5",
 ];
 

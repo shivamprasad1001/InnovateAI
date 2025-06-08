@@ -75,7 +75,7 @@ const MarkdownContent: React.FC<{ text: string }> = ({ text }) => {
   let listItems: JSX.Element[] = [];
 
   const processLineContent = (lineContent: string): (string | JSX.Element)[] => {
-    const parts = lineContent.split(/(\*\*.*?\*\*)/g);
+    const parts = lineContent.split(/(\*\*.*?\*\*|\[.*?\]\(.*?\))/g);
     return parts.map((part, index) => {
       if (part.startsWith('**') && part.endsWith('**')) {
         return <strong key={index} className="font-semibold">{part.substring(2, part.length - 2)}</strong>;

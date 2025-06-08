@@ -77,11 +77,32 @@ const MarkdownContent: React.FC<{ text: string }> = ({ text }) => {
   const processLineContent = (lineContent: string): (string | JSX.Element)[] => {
     const parts = lineContent.split(/(\*\*.*?\*\*|\[.*?\]\(.*?\))/g);
     return parts.map((part, index) => {
-      if (part.startsWith('**') && part.endsWith('**')) {
-        return <strong key={index} className="font-semibold">{part.substring(2, part.length - 2)}</strong>;
-      }
-      return part;
-    });
+  // Bold text
+  if (part.startsWith('**') && part.endsWith('**')) {
+    return <strong key={index} className="font-semibold">{part.slice(2, -2)}</strong>;
+  }
+
+  // Markdown link
+  const linkMatch = part.match(/^\[(.*?)\]\((.*?)\)$/);
+  if (linkMatch) {
+    const [, linkText, linkHref] = linkMatch;
+    return (
+      <a
+        key={index}
+        href={linkHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary underline hover:text-primary-dark"
+      >
+        {linkText}
+      </a>
+    );
+  }
+
+  // Plain text
+  return part;
+});
+
   };
   
   const endCurrentList = () => {

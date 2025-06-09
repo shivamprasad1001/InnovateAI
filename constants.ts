@@ -1,7 +1,7 @@
 
 import { NavLink, Testimonial, Service, CaseStudy, HowItWorksStepContent } from './types';
 
-export const COMPANY_NAME = "InnovateAI Solutions";
+export const COMPANY_NAME = "InnovatAI";
 export const COMPANY_SLOGAN = "AI-Powered Growth, Simplified.";
 
 export const FOUNDER_NAME = "Shivam Prasad";

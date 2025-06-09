@@ -172,7 +172,7 @@ export const teamMembers = [
   {
     name: "Raj Mishra",
     title: "Lead AI Engineer & Product Officer",
-    bio: "Specializes in machine learning model development and deployment with 8+ years of experience in AI/ML solutions.",
+    bio: "Specializes in machine learning model development and deployment in AI/ML solutions.",
     image: "https://media.licdn.com/dms/image/v2/D5635AQHVvQ-MgeiV5w/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1734343883018?e=1750104000&v=beta&t=IZTJeUGXwdSbYEm0EjxdPj9wE65zd8qaw9aBNl1U6pE", 
     linkedin: "https://www.linkedin.com/in/raj-mishra-51a3732a0/",
     github: "https://github.com/Raj-Mgif"

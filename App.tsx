@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { HashRouter, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -25,7 +25,7 @@ const ScrollToTop: React.FC = () => {
 const App: React.FC = () => {
   return (
     <ThemeProvider>
-      <HashRouter>
+      <BrowserRouter>
         <ScrollToTop />
         <div className="flex flex-col min-h-screen bg-white dark:bg-neutral-darker transition-colors duration-300 ease-in-out">
           <Navbar />
@@ -41,7 +41,7 @@ const App: React.FC = () => {
           <Footer />
           <AiChatbot /> {/* Replaced ChatbotFabPlaceholder */}
         </div>
-      </HashRouter>
+      </BrowserRouter>
     </ThemeProvider>
   );
 };

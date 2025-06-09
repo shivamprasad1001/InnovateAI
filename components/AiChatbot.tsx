@@ -321,7 +321,7 @@ If you're unsure about something, respond politely and offer to connect them wit
     <>
       <button
         onClick={isModalOpen ? closeModal : openModal}
-        className={`fixed bottom-6 right-6 bg-primary hover:bg-primary-dark text-white p-4 rounded-full shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-light focus:ring-offset-2 transition-all duration-300 ease-in-out z-[70]
+        className={`fixed bottom-6 right-6 bg-primary hover:bg-primary-dark text-white p-4 rounded-full shadow-xl focus:outline-none focus:ring-2 focus:ring-primary-light focus:ring-offset-2 transition-all duration-300 ease-in-out z-[50]
                     ${showFab ? 'opacity-100 scale-100' : 'opacity-0 scale-75'} transform hover:scale-110`}
         aria-label={isModalOpen ? "Close chat" : "Open chat assistant"}
         style={{ visibility: showFab ? 'visible' : 'hidden' }}

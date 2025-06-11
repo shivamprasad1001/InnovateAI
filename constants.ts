@@ -11,8 +11,8 @@ export const FOUNDER_GITHUB = "https://github.com/shivamprasad1001";
 export const FOUNDER_LINKEDIN = "https://linkedin.com/in/shivamprasad1001"; 
 export const FOUNDER_IMAGE_PLACEHOLDER = "https://media.licdn.com/dms/image/v2/D5603AQG1JF4TjMh4qg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709327770890?e=2147483647&v=beta&t=yH90N9z1qxW6ey5031FV_bHHXhFIh5CxXZAYaLtgsto";
 
-export const CONTACT_EMAIL = "hello@innovateaisolutions.com"; // Replace with actual email
-export const CONTACT_PHONE = "+91 90263941xx"; 
+export const CONTACT_EMAIL = "hello.innovatai@gmail.com"; // Replace with actual email
+export const CONTACT_PHONE = "+91 9026394109"; 
 export const CALENDLY_LINK = "https://calendly.com/innovateai-demo/free-consultation"; // Replace with actual link
 
 export enum RoutePath {

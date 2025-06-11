@@ -13,7 +13,7 @@ export const FOUNDER_IMAGE_PLACEHOLDER = "https://media.licdn.com/dms/image/v2/D
 
 export const CONTACT_EMAIL = "hello.innovatai@gmail.com"; // Replace with actual email
 export const CONTACT_PHONE = "+91 9026394109"; 
-export const CALENDLY_LINK = "https://calendly.com/innovateai-demo/free-consultation"; // Replace with actual link
+export const CALENDLY_LINK = "https://calendly.com/founder-innovatai/30min"; // Replace with actual link
 
 export enum RoutePath {
   HOME = '/',

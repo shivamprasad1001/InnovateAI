@@ -14,15 +14,11 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <Link to={ROUTES.HOME} className="flex-shrink-0 flex items-center">
+            <Link to={ROUTES.HOME} className="flex-shrink-0">
   <img 
     src="public/logo.png" 
     alt={COMPANY_NAME}
-    className="h-8 w-auto mr-3 transition-opacity duration-300 ease-in-out hover:opacity-80"
-    onError={(e) => {
-      e.currentTarget.style.display = 'none';
-      e.currentTarget.nextElementSibling.style.display = 'block';
-    }}
+    className="h-8 w-auto transition-opacity duration-300 ease-in-out hover:opacity-80"
   />
 </Link>
           </div>

@@ -14,9 +14,23 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center">
-            <Link to={ROUTES.HOME} className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-primary dark:text-primary-light transition-colors duration-300 ease-in-out">{COMPANY_NAME}</h1>
-            </Link>
+            <Link to={ROUTES.HOME} className="flex-shrink-0 flex items-center">
+  <img 
+    src="public/logo.png" 
+    alt={COMPANY_NAME}
+    className="h-8 w-auto mr-3 transition-opacity duration-300 ease-in-out hover:opacity-80"
+    onError={(e) => {
+      e.currentTarget.style.display = 'none';
+      e.currentTarget.nextElementSibling.style.display = 'block';
+    }}
+  />
+  <h1 
+    className="text-2xl font-bold text-primary dark:text-primary-light transition-colors duration-300 ease-in-out hidden"
+    style={{ display: 'none' }}
+  >
+    {COMPANY_NAME}
+  </h1>
+</Link>
           </div>
           <div className="hidden md:flex items-center">
             <div className="ml-10 flex items-baseline space-x-4">

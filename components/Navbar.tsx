@@ -16,9 +16,14 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <Link to={ROUTES.HOME} className="flex-shrink-0">
   <img 
-    src="/logo.png" 
+    src="/logo-light.png" 
     alt={COMPANY_NAME}
-    className="h-10 w-auto sm:h-12 md:h-14 transition-opacity duration-300 ease-in-out hover:opacity-80"
+    className="h-8 w-auto dark:hidden transition-opacity duration-300 ease-in-out hover:opacity-80"
+  />
+  <img 
+    src="/logo-dark.png" 
+    alt={COMPANY_NAME}
+    className="h-8 w-auto hidden dark:block transition-opacity duration-300 ease-in-out hover:opacity-80"
   />
 </Link>
           </div>

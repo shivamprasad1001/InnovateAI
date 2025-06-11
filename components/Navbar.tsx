@@ -24,12 +24,6 @@ const Navbar: React.FC = () => {
       e.currentTarget.nextElementSibling.style.display = 'block';
     }}
   />
-  <h1 
-    className="text-2xl font-bold text-primary dark:text-primary-light transition-colors duration-300 ease-in-out hidden"
-    style={{ display: 'none' }}
-  >
-    {COMPANY_NAME}
-  </h1>
 </Link>
           </div>
           <div className="hidden md:flex items-center">

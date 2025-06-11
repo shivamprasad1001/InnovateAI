@@ -18,12 +18,12 @@ const Navbar: React.FC = () => {
   <img 
     src="/logo-white.png" 
     alt={COMPANY_NAME}
-    className="h-8 w-auto dark:hidden transition-opacity duration-300 ease-in-out hover:opacity-80"
+    className="w-32 h-auto hidden dark:block transition-opacity duration-300 ease-in-out hover:opacity-80"
   />
   <img 
     src="/logo-black.png" 
     alt={COMPANY_NAME}
-    className="h-8 w-auto hidden dark:block transition-opacity duration-300 ease-in-out hover:opacity-80"
+    className="w-32 h-auto hidden dark:block transition-opacity duration-300 ease-in-out hover:opacity-80"
   />
 </Link>
           </div>

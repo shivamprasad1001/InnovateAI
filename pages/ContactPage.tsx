@@ -1,5 +1,4 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Section from '../components/Section';
 import Button from '../components/Button';
 import Icon from '../components/Icon';
@@ -36,6 +35,21 @@ const ContactPage: React.FC = () => {
   const [contactInfoRef] = useScrollAnimation({ animationClass: "animate-fadeInUp", delay: 200 });
   const [bookingRef] = useScrollAnimation({ animationClass: "animate-fadeInUp", delay: 300 });
 
+  // Load Calendly script
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      // Cleanup script when component unmounts
+      const existingScript = document.querySelector('script[src="https://assets.calendly.com/assets/external/widget.js"]');
+      if (existingScript) {
+        document.body.removeChild(existingScript);
+      }
+    };
+  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -163,21 +177,18 @@ const ContactPage: React.FC = () => {
               </ul>
             </div>
 
-            <div ref={bookingRef} className="bg-primary dark:bg-primary-dark text-white p-8 rounded-xl shadow-xl text-center animate-on-scroll transition-all duration-300 ease-in-out">
-              <h3 className="text-2xl font-bold mb-3 transition-colors duration-300 ease-in-out">Schedule a Free Consultation</h3>
-              <p className="mb-6 text-primary-light dark:text-teal-300 transition-colors duration-300 ease-in-out">{CONTACT_BOOKING_PROMPT}</p>
-              <Button
-                href={CALENDLY_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                size="lg"
-                className="bg-white text-primary hover:bg-neutral-light focus:ring-white dark:hover:bg-gray-200 w-full"
-              >
-                Book Your 15-Min Call
-              </Button>
-               <p className="mt-4 text-xs text-primary-light/70 dark:text-teal-300/70 transition-colors duration-300 ease-in-out">
-                Uses Calendly - opens in new tab.
-              </p>
+            {/* Calendly Booking Widget */}
+            <div ref={bookingRef} className="bg-white dark:bg-neutral-dark rounded-xl shadow-xl dark:shadow-primary/10 animate-on-scroll transition-all duration-300 ease-in-out overflow-hidden">
+              <div className="bg-primary dark:bg-primary-dark text-white p-6 text-center">
+                <h3 className="text-2xl font-bold mb-2 transition-colors duration-300 ease-in-out">Schedule a Free Consultation</h3>
+                <p className="text-primary-light dark:text-teal-300 transition-colors duration-300 ease-in-out">{CONTACT_BOOKING_PROMPT}</p>
+              </div>
+              {/* Calendly inline widget */}
+              <div 
+                className="calendly-inline-widget" 
+                data-url="https://calendly.com/founder-innovatai/30min?primary_color=0faf93" 
+                style={{ minWidth: '320px', height: '700px' }}
+              ></div>
             </div>
           </div>
         </div>

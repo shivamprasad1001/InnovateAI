@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
   <img 
     src="/logo-white.png" 
     alt={COMPANY_NAME}
-    className="w-32 h-auto hidden dark:block transition-opacity duration-300 ease-in-out hover:opacity-80"
+    className="w-32 h-auto dark:block transition-opacity duration-300 ease-in-out hover:opacity-80"
   />
   <img 
     src="/logo-black.png" 

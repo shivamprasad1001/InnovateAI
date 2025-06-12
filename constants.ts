@@ -9,7 +9,7 @@ export const FOUNDER_TITLE = "AI Developer & Founder";
 export const FOUNDER_BIO = "Shivam is a passionate AI Developer dedicated to helping businesses leverage the power of artificial intelligence. With expertise in building custom AI tools, he focuses on delivering practical solutions that solve real-world problems and drive tangible results. Shivam believes in making AI accessible and affordable for startups and small businesses, empowering them to innovate and grow.";
 export const FOUNDER_GITHUB = "https://github.com/shivamprasad1001"; 
 export const FOUNDER_LINKEDIN = "https://linkedin.com/in/shivamprasad1001"; 
-export const FOUNDER_IMAGE_PLACEHOLDER = "https://media.licdn.com/dms/image/v2/D5603AQG1JF4TjMh4qg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1709327770890?e=2147483647&v=beta&t=yH90N9z1qxW6ey5031FV_bHHXhFIh5CxXZAYaLtgsto";
+export const FOUNDER_IMAGE_PLACEHOLDER = "./Shivam.png";
 
 export const CONTACT_EMAIL = "hello.innovatai@gmail.com"; // Replace with actual email
 export const CONTACT_PHONE = "+91 9026394109"; 

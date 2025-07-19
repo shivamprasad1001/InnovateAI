@@ -36,15 +36,6 @@ About InnovateAI
 InnovateAI builds tailored AI-powered tools that automate and optimize workflows for small businesses and creators — including smart chatbots, lead capture systems, assistants, and productivity automation tools.
 
 To explore our tools or get in touch for a solution, visit the site or contact Shivam directly.
-
-
----
-
-License
-
-This website source code is under the MIT License unless otherwise specified.
-
-
 ---
 
 Author

@@ -9,8 +9,8 @@ The site is deployed via [Vercel](https://vercel.com) and serves as the official
 
 ## Live Website
 
-Visit the site here: [https://innovateai.vercel.app](https://innovateai.vercel.app)  
-(Replace this URL with your actual deployment URL if different)
+Visit the site here: [https://innovate-ai-two.vercel.app/](https://innovate-ai-two.vercel.app/)  
+
 
 ---
 
@@ -23,7 +23,7 @@ It exists solely to manage and deploy the **website frontend** for InnovateAI.
 
 ## Tech Stack
 
-- Framework: [Next.js](https://nextjs.org/) or [React.js]/[Vanilla HTML/CSS] (specify what you used)
+- Framework: [Next.js](https://nextjs.org/)
 - Styling: Tailwind CSS / Bootstrap / Custom CSS
 - Deployment: Vercel
 

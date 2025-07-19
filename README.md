@@ -29,11 +29,7 @@ It exists solely to manage and deploy the **website frontend** for InnovateAI.
 
 ---
 
-## Structure
 
-/ ├── public/          # Static assets ├── pages/           # Main site pages (if using Next.js) ├── components/      # Reusable UI components ├── styles/          # CSS or Tailwind files ├── vercel.json      # (Optional) Vercel config └── README.md
-
-- 
 
 About InnovateAI
 
